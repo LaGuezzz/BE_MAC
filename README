@@ -1,0 +1,7 @@
+Voici notre Rendu pour le BE Contrôle d'accès au Medium! Vous avez dans le git accès à tout le projet.
+
+IMPORTANT :
+- le PATH du fichier source est le suivant : BE_MAC/BE_MAC.srcs/sources_1/new/
+- Le fichier reception.vhd contient les processus de réception, transmission et de collision
+- le PATH du fichier test est le suivant : BE_MAC/BE_MAC.srcs/sim_1/new/
+- le fichier test_reception.vdh contient les test de réception, transmission et de collision
