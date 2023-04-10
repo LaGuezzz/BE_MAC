@@ -5,3 +5,4 @@ IMPORTANT :
 - Le fichier reception.vhd contient les processus de réception, transmission et de collision
 - le PATH du fichier test est le suivant : BE_MAC/BE_MAC.srcs/sim_1/new/
 - le fichier test_reception.vdh contient les test de réception, transmission et de collision
+- les fichiers de synthèse doivent être ouvert via Vivado, et se récupère soit en relancant une synthèse, soit en ouvrant les fichier présents dans BE_MAC/BE_MAC.runs/synth_1/
