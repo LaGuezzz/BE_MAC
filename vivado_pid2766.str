@@ -1,0 +1,122 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:02:38 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 2766
+License: Customer
+
+Current time: 	Fri Mar 03 13:57:36 CET 2023
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 5.15.0-60-generic
+OS Architecture: amd64
+Available processors (cores): 12
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 216 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/tps/lnx64/jre
+Java executable location: 	/usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	deladrie
+User home directory: /home/deladrie
+User working directory: /home/deladrie/Bureau/BE_MAC
+User country: 	FR
+User language: 	fr
+User locale: 	fr_FR
+
+RDI_BASEROOT: /usr/local/insa/Xilinx.VIVADO/Vivado
+HDI_APPROOT: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2
+RDI_DATADIR: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/data
+RDI_BINDIR: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/bin
+
+Vivado preferences file location: /home/deladrie/.Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: /home/deladrie/.Xilinx/Vivado/2018.2/
+Vivado layouts directory: /home/deladrie/.Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	/usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/deladrie/Bureau/BE_MAC/vivado.log
+Vivado journal file location: 	/home/deladrie/Bureau/BE_MAC/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-2766-insa-11273
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: /usr/local/insa/Xilinx.VIVADO/Xilinx.lic
+XILINX_DSP: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2
+XILINX_SDK: /usr/local/insa/Xilinx.VIVADO/SDK/2018.2
+XILINX_VIVADO: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2
+XILINX_VIVADO_HLS: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2
+
+
+GUI allocated memory:	198 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 943 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 63 MB (+63159kb) [00:00:06]
+// [Engine Memory]: 937 MB (+830528kb) [00:00:06]
+// HMemoryUtils.trashcanNow. Engine heap size: 948 MB. GUI used memory: 41 MB. Current time: 3/3/23 1:57:38 PM CET
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // x (w, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+setFileChooser("/home/deladrie/Bureau/BE_MAC/BE_MAC.xpr");
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: /home/deladrie/Bureau/BE_MAC/BE_MAC.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/deladrie/Bureau/BE_MAC/BE_MAC.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/deladrie/Bureau/BE_MAC/BE_MAC.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [Engine Memory]: 1,004 MB (+22094kb) [00:00:20]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 1,068 MB (+13548kb) [00:00:21]
+// Project name: BE_MAC; location: /home/deladrie/Bureau/BE_MAC; part: xc7a35tcpg236-1
+// 'i' command handler elapsed time: 9 seconds
+// [GUI Memory]: 72 MB (+6343kb) [00:00:22]
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 6183.441 ; gain = 77.703 ; free physical = 60595 ; free virtual = 71493 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,091 MB. GUI used memory: 46 MB. Current time: 3/3/23 1:57:58 PM CET
+// Elapsed time: 10 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, EthernetController(Behavioral) (reception.vhd)]", 2, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, EthernetController(Behavioral) (reception.vhd)]", 2, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 85 seconds
+selectCodeEditor("reception.vhd", 189, 272); // ce (w, ck)
+selectCodeEditor("reception.vhd", 189, 293); // ce (w, ck)
+selectCodeEditor("reception.vhd", 181, 278); // ce (w, ck)
+// Elapsed time: 11 seconds
+selectCodeEditor("reception.vhd", 273, 191); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("reception.vhd", 117, 475); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 77 MB (+1161kb) [00:02:55]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,131 MB (+10757kb) [00:02:56]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,131 MB. GUI used memory: 48 MB. Current time: 3/3/23 2:00:23 PM CET
+// TclEventType: DG_GRAPH_GENERATED

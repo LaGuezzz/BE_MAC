@@ -1,0 +1,609 @@
+/*
+
+Xilinx Vivado v2018.2 (64-bit) [Major: 2018, Minor: 2]
+SW Build: 2258646 on Thu Jun 14 20:02:38 MDT 2018
+IP Build: 2256618 on Thu Jun 14 22:10:49 MDT 2018
+
+Process ID: 3591
+License: Customer
+
+Current time: 	Fri Mar 03 14:03:45 CET 2023
+Time zone: 	Central European Time (Europe/Paris)
+
+OS: Ubuntu
+OS Version: 5.15.0-60-generic
+OS Architecture: amd64
+Available processors (cores): 12
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 217 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	/usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/tps/lnx64/jre
+Java executable location: 	/usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/tps/lnx64/jre/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 2 GB
+
+
+User name: 	deladrie
+User home directory: /home/deladrie
+User working directory: /home/deladrie/Bureau/BE_MAC
+User country: 	FR
+User language: 	fr
+User locale: 	fr_FR
+
+RDI_BASEROOT: /usr/local/insa/Xilinx.VIVADO/Vivado
+HDI_APPROOT: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2
+RDI_DATADIR: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/data
+RDI_BINDIR: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/bin
+
+Vivado preferences file location: /home/deladrie/.Xilinx/Vivado/2018.2/vivado.xml
+Vivado preferences directory: /home/deladrie/.Xilinx/Vivado/2018.2/
+Vivado layouts directory: /home/deladrie/.Xilinx/Vivado/2018.2/layouts
+PlanAhead jar file location: 	/usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/lib/classes/planAhead.jar
+Vivado log file location: 	/home/deladrie/Bureau/BE_MAC/vivado.log
+Vivado journal file location: 	/home/deladrie/Bureau/BE_MAC/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-3591-insa-11277
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/ids_lite/ISE
+XILINXD_LICENSE_FILE: /usr/local/insa/Xilinx.VIVADO/Xilinx.lic
+XILINX_DSP: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/ids_lite/ISE
+XILINX_PLANAHEAD: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2
+XILINX_SDK: /usr/local/insa/Xilinx.VIVADO/SDK/2018.2
+XILINX_VIVADO: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2
+XILINX_VIVADO_HLS: /usr/local/insa/Xilinx.VIVADO/Vivado/2018.2
+
+
+GUI allocated memory:	156 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 898 MB
+
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 68 MB (+68527kb) [00:00:06]
+// [Engine Memory]: 891 MB (+782625kb) [00:00:06]
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_PROJECT, "Open Project"); // x (w, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// HMemoryUtils.trashcanNow. Engine heap size: 916 MB. GUI used memory: 62 MB. Current time: 3/3/23 2:03:47 PM CET
+setFileChooser("/home/deladrie/Bureau/BE_MAC/BE_MAC.xpr");
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: /home/deladrie/Bureau/BE_MAC/BE_MAC.xpr. Version: Vivado v2018.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/deladrie/Bureau/BE_MAC/BE_MAC.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project /home/deladrie/Bureau/BE_MAC/BE_MAC.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// [GUI Memory]: 78 MB (+7031kb) [00:00:15]
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 106 MB (+25822kb) [00:00:17]
+// [Engine Memory]: 1,011 MB (+79466kb) [00:00:17]
+// [Engine Memory]: 1,071 MB (+9885kb) [00:00:18]
+// Project name: BE_MAC; location: /home/deladrie/Bureau/BE_MAC; part: xc7a35tcpg236-1
+// 'i' command handler elapsed time: 9 seconds
+// Tcl Message: open_project: Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 6173.656 ; gain = 86.645 ; free physical = 60562 ; free virtual = 71298 
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, EthernetController(Behavioral) (reception.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, EthernetController(Behavioral) (reception.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, EthernetController(Behavioral) (reception.vhd)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 169 seconds
+selectCodeEditor("reception.vhd", 170, 375); // ce (w, ck)
+// Elapsed time: 110 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_CHECKPOINT, "Checkpoint"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent"); // aa (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,129 MB. GUI used memory: 48 MB. Current time: 3/3/23 2:08:47 PM CET
+selectMenuItem(PAResourceCommand.PACommandNames_OPEN_PROJECT, "Open..."); // ad (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+// Run Command: PAResourceCommand.PACommandNames_OPEN_PROJECT
+// [Engine Memory]: 1,139 MB (+14517kb) [00:05:14]
+// Elapsed time: 18 seconds
+setFileChooser("/home/deladrie/Bureau/compteur/compteur.xpr");
+// bx (ck):  Open Project : addNotify
+// Opening Vivado Project: /home/deladrie/Bureau/compteur/compteur.xpr. Version: Vivado v2018.2 
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_No", "No"); // JButton (A, G)
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// Tcl Message: open_project /home/deladrie/Bureau/compteur/compteur.xpr 
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/usr/local/insa/Xilinx.VIVADO/Vivado/2018.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,154 MB. GUI used memory: 58 MB. Current time: 3/3/23 2:09:14 PM CET
+// Project name: compteur; location: /home/deladrie/Bureau/compteur; part: xc7a35tcpg236-1
+// 'i' command handler elapsed time: 26 seconds
+dismissDialog("Open Project"); // bx (ck)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter(Behavioral) (counter.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter(Behavioral) (counter.vhd)]", 1, false); // B (D, ck)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, counter(Behavioral) (counter.vhd)]", 1, false, false, false, false, false, true); // B (D, ck) - Double Click
+// Elapsed time: 38 seconds
+selectCodeEditor("reception.vhd", 96, 129); // ce (w, ck)
+// Elapsed time: 44 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "Project Summary", 0); // k (j, ck)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reception.vhd", 1); // k (j, ck)
+selectCodeEditor("reception.vhd", 90, 236); // ce (w, ck)
+// Elapsed time: 74 seconds
+selectCodeEditor("reception.vhd", 113, 320); // ce (w, ck)
+selectCodeEditor("reception.vhd", 26, 354); // ce (w, ck)
+selectCodeEditor("reception.vhd", 46, 326, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectCodeEditor("reception.vhd", 17, 365); // ce (w, ck)
+selectCodeEditor("reception.vhd", 49, 324); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("reception.vhd", 67, 323); // ce (w, ck)
+// Elapsed time: 15 seconds
+selectCodeEditor("reception.vhd", 123, 157); // ce (w, ck)
+selectCodeEditor("reception.vhd", 75, 318); // ce (w, ck)
+selectCodeEditor("reception.vhd", 108, 160); // ce (w, ck)
+// Elapsed time: 19 seconds
+selectCodeEditor("reception.vhd", 23, 154); // ce (w, ck)
+// Elapsed time: 22 seconds
+selectCodeEditor("reception.vhd", 157, 324); // ce (w, ck)
+selectCodeEditor("reception.vhd", 52, 327, false, false, false, true, false); // ce (w, ck) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_COPY, "Copy"); // ad (aj, Popup.HeavyWeightWindow)
+selectCodeEditor("reception.vhd", 202, 322); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("reception.vhd", 345, 422); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// Elapsed time: 108 seconds
+selectCodeEditor("reception.vhd", 194, 287); // ce (w, ck)
+selectCodeEditor("reception.vhd", 56, 309); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("reception.vhd", 419, 455); // ce (w, ck)
+selectCodeEditor("reception.vhd", 147, 462); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 75 seconds
+selectCodeEditor("reception.vhd", 241, 412); // ce (w, ck)
+selectCodeEditor("reception.vhd", 136, 230); // ce (w, ck)
+selectCodeEditor("reception.vhd", 218, 201); // ce (w, ck)
+selectCodeEditor("reception.vhd", 212, 230); // ce (w, ck)
+// Elapsed time: 211 seconds
+selectCodeEditor("reception.vhd", 167, 274); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 78 seconds
+selectCodeEditor("reception.vhd", 178, 277); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 21 seconds
+typeControlKey(null, null, 'z');
+// [GUI Memory]: 113 MB (+1778kb) [00:19:38]
+// Elapsed time: 333 seconds
+selectCodeEditor("reception.vhd", 155, 119); // ce (w, ck)
+// Elapsed time: 49 seconds
+selectCodeEditor("reception.vhd", 200, 260); // ce (w, ck)
+selectCodeEditor("reception.vhd", 236, 264); // ce (w, ck)
+selectCodeEditor("reception.vhd", 273, 266); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("reception.vhd", 270, 411); // ce (w, ck)
+selectCodeEditor("reception.vhd", 273, 401); // ce (w, ck)
+// Elapsed time: 15 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 284 seconds
+selectCodeEditor("reception.vhd", 132, 147); // ce (w, ck)
+selectCodeEditor("reception.vhd", 111, 130); // ce (w, ck)
+selectCodeEditor("reception.vhd", 70, 132); // ce (w, ck)
+// Elapsed time: 23 seconds
+selectCodeEditor("reception.vhd", 170, 403); // ce (w, ck)
+selectCodeEditor("reception.vhd", 168, 400); // ce (w, ck)
+selectCodeEditor("reception.vhd", 168, 400, false, false, false, false, true); // ce (w, ck) - Double Click
+// Elapsed time: 12 seconds
+selectCodeEditor("reception.vhd", 54, 264); // ce (w, ck)
+// Elapsed time: 67 seconds
+selectCodeEditor("reception.vhd", 134, 244); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("reception.vhd", 274, 291); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("reception.vhd", 72, 138); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("reception.vhd", 190, 275); // ce (w, ck)
+selectCodeEditor("reception.vhd", 191, 368); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("reception.vhd", 139, 275); // ce (w, ck)
+// [GUI Memory]: 119 MB (+292kb) [00:34:16]
+// Elapsed time: 59 seconds
+selectCodeEditor("reception.vhd", 259, 308); // ce (w, ck)
+// Elapsed time: 25 seconds
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// Elapsed time: 12 seconds
+selectCodeEditor("reception.vhd", 192, 327); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,191 MB. GUI used memory: 61 MB. Current time: 3/3/23 2:39:17 PM CET
+// Elapsed time: 90 seconds
+selectCodeEditor("reception.vhd", 138, 276); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("reception.vhd", 43, 395); // ce (w, ck)
+// Elapsed time: 41 seconds
+selectCodeEditor("reception.vhd", 246, 143); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("reception.vhd", 66, 202); // ce (w, ck)
+// Elapsed time: 29 seconds
+selectCodeEditor("reception.vhd", 223, 158); // ce (w, ck)
+// Elapsed time: 102 seconds
+selectCodeEditor("reception.vhd", 509, 429); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("reception.vhd", 248, 137); // ce (w, ck)
+selectCodeEditor("reception.vhd", 150, 308); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: current_project BE_MAC 
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 1,208 MB (+12973kb) [00:40:36]
+// TclEventType: DG_GRAPH_GENERATED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,208 MB. GUI used memory: 61 MB. Current time: 3/3/23 2:44:17 PM CET
+// Elapsed time: 171 seconds
+selectCodeEditor("reception.vhd", 166, 460); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 129 seconds
+selectCodeEditor("reception.vhd", 248, 441); // ce (w, ck)
+selectCodeEditor("reception.vhd", 440, 399); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("reception.vhd", 442, 431); // ce (w, ck)
+// Elapsed time: 28 seconds
+selectCodeEditor("reception.vhd", 596, 400); // ce (w, ck)
+selectCodeEditor("reception.vhd", 545, 437); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'c'); // ce (w, ck)
+// Elapsed time: 94 seconds
+selectCodeEditor("reception.vhd", 249, 326); // ce (w, ck)
+// Elapsed time: 26 seconds
+selectCodeEditor("reception.vhd", 249, 355); // ce (w, ck)
+// Elapsed time: 198 seconds
+selectCodeEditor("reception.vhd", 548, 442); // ce (w, ck)
+selectCodeEditor("reception.vhd", 361, 361); // ce (w, ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,209 MB. GUI used memory: 59 MB. Current time: 3/3/23 3:14:17 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,209 MB. GUI used memory: 59 MB. Current time: 3/3/23 3:44:17 PM CET
+// Elapsed time: 3834 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 14, false); // u (O, ck)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// aj (ck): Save Project: addNotify
+selectButton(PAResourceQtoS.SaveProjectUtils_SAVE, "Save"); // a (aj)
+// bx (ck):  Save Constraints : addNotify
+// TclEventType: DG_GRAPH_STALE
+// f (ck): Launch Runs: addNotify
+dismissDialog("Save Project"); // aj (ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 -jobs 2 
+// Tcl Message: [Fri Mar  3 15:59:30 2023] Launched synth_1... Run output will be captured here: /home/deladrie/Bureau/BE_MAC/BE_MAC.runs/synth_1/runme.log 
+// 'k' command handler elapsed time: 5 seconds
+dismissDialog("Starting Design Runs"); // bx (ck)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,232 MB. GUI used memory: 60 MB. Current time: 3/3/23 3:59:32 PM CET
+// TclEventType: RUN_COMPLETED
+// ah (ck): Synthesis Completed: addNotify
+// Elapsed time: 37 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// f (ck): Launch Runs: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (f)
+// bx (ck):  Starting Design Runs : addNotify
+dismissDialog("Launch Runs"); // f (ck)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -jobs 2 
+// Tcl Message: [Fri Mar  3 16:00:09 2023] Launched impl_1... Run output will be captured here: /home/deladrie/Bureau/BE_MAC/BE_MAC.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bx (ck)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ah (ck): Implementation Completed: addNotify
+// Elapsed time: 91 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (ah)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bx (ck):  Open Implemented Design : addNotify
+// Tcl Message: open_run impl_1 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,291 MB. GUI used memory: 62 MB. Current time: 3/3/23 4:01:42 PM CET
+// [Engine Memory]: 1,313 MB (+47054kb) [01:58:08]
+// [Engine Memory]: 1,406 MB (+28713kb) [01:58:18]
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,435 MB. GUI used memory: 61 MB. Current time: 3/3/23 4:01:55 PM CET
+// [Engine Memory]: 1,525 MB (+50981kb) [01:58:19]
+// TclEventType: DESIGN_NEW
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// Device: addNotify
+// DeviceView Instantiated
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Netlist 29-17] Analyzing 11 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2018.2 INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Project 1-570] Preparing netlist for logic optimization 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6509.312 ; gain = 0.000 ; free physical = 55306 ; free virtual = 68409 
+// Tcl Message: Restored from archive | CPU: 0.010000 secs | Memory: 0.070107 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 6509.312 ; gain = 0.000 ; free physical = 55306 ; free virtual = 68409 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// Device view-level: 0,0
+// TclEventType: DRC_ADDED
+// Tcl Message: open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 6679.352 ; gain = 370.176 ; free physical = 55227 ; free virtual = 68335 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dP' command handler elapsed time: 17 seconds
+// Elapsed time: 17 seconds
+dismissDialog("Open Implemented Design"); // bx (ck)
+// [GUI Memory]: 130 MB (+5260kb) [01:58:22]
+// [Engine Memory]: 1,611 MB (+9404kb) [01:58:25]
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "reception.vhd", 2); // k (j, ck)
+// RouteApi::initDelayMediator elapsed time: 18.9s
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// [Engine Memory]: 1,904 MB (+222915kb) [01:58:40]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,904 MB. GUI used memory: 98 MB. Current time: 3/3/23 4:02:18 PM CET
+// HMemoryUtils.trashcanNow. Engine heap size: 1,924 MB. GUI used memory: 97 MB. Current time: 3/3/23 4:02:42 PM CET
+// Elapsed time: 423 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // aa (ck)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V (q, ck)
+selectCodeEditor("reception.vhd", 404, 147); // ce (w, ck)
+// Elapsed time: 55 seconds
+selectCodeEditor("reception.vhd", 210, 216); // ce (w, ck)
+// [GUI Memory]: 138 MB (+1494kb) [02:08:48]
+// Elapsed time: 223 seconds
+selectCodeEditor("reception.vhd", 144, 295); // ce (w, ck)
+// Elapsed time: 30 seconds
+selectCodeEditor("reception.vhd", 101, 249); // ce (w, ck)
+selectCodeEditor("reception.vhd", 85, 248); // ce (w, ck)
+// Elapsed time: 18 seconds
+selectCodeEditor("reception.vhd", 83, 252); // ce (w, ck)
+// [GUI Memory]: 146 MB (+988kb) [02:11:08]
+typeControlKey((HResource) null, "reception.vhd", 'c'); // ce (w, ck)
+selectCodeEditor("reception.vhd", 116, 251); // ce (w, ck)
+selectCodeEditor("reception.vhd", 54, 269); // ce (w, ck)
+selectCodeEditor("reception.vhd", 85, 254); // ce (w, ck)
+// Elapsed time: 53 seconds
+selectCodeEditor("reception.vhd", 64, 244); // ce (w, ck)
+// Elapsed time: 73 seconds
+typeControlKey(null, null, 'z');
+// Elapsed time: 13 seconds
+selectCodeEditor("reception.vhd", 112, 273); // ce (w, ck)
+selectCodeEditor("reception.vhd", 136, 324); // ce (w, ck)
+selectCodeEditor("reception.vhd", 183, 263); // ce (w, ck)
+selectCodeEditor("reception.vhd", 66, 64); // ce (w, ck)
+selectCodeEditor("reception.vhd", 283, 246); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("reception.vhd", 109, 277); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 12 seconds
+selectCodeEditor("reception.vhd", 130, 288); // ce (w, ck)
+// [GUI Memory]: 154 MB (+482kb) [02:17:33]
+// Elapsed time: 336 seconds
+selectCodeEditor("reception.vhd", 88, 99); // ce (w, ck)
+selectCodeEditor("reception.vhd", 353, 247); // ce (w, ck)
+// Elapsed time: 81 seconds
+selectCodeEditor("reception.vhd", 102, 276); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("reception.vhd", 152, 283); // ce (w, ck)
+// Elapsed time: 44 seconds
+selectCodeEditor("reception.vhd", 192, 326); // ce (w, ck)
+selectCodeEditor("reception.vhd", 299, 271); // ce (w, ck)
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+selectCodeEditor("reception.vhd", 326, 281); // ce (w, ck)
+// Elapsed time: 53 seconds
+selectCodeEditor("reception.vhd", 134, 275); // ce (w, ck)
+// Elapsed time: 39 seconds
+selectCodeEditor("reception.vhd", 257, 282); // ce (w, ck)
+selectCodeEditor("reception.vhd", 291, 309); // ce (w, ck)
+// Elapsed time: 21 seconds
+selectCodeEditor("reception.vhd", 164, 333); // ce (w, ck)
+selectCodeEditor("reception.vhd", 173, 334); // ce (w, ck)
+selectCodeEditor("reception.vhd", 178, 345); // ce (w, ck)
+selectCodeEditor("reception.vhd", 173, 340); // ce (w, ck)
+// Elapsed time: 14 seconds
+selectCodeEditor("reception.vhd", 215, 312); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// Elapsed time: 22 seconds
+typeControlKey(null, null, 'z');
+// HMemoryUtils.trashcanNow. Engine heap size: 1,933 MB. GUI used memory: 98 MB. Current time: 3/3/23 4:32:43 PM CET
+// Elapsed time: 248 seconds
+selectCodeEditor("reception.vhd", 91, 253); // ce (w, ck)
+selectCodeEditor("reception.vhd", 316, 325); // ce (w, ck)
+selectCodeEditor("reception.vhd", 249, 270); // ce (w, ck)
+selectCodeEditor("reception.vhd", 108, 264); // ce (w, ck)
+// Elapsed time: 53 seconds
+selectCodeEditor("reception.vhd", 206, 186); // ce (w, ck)
+// Elapsed time: 39 seconds
+selectCodeEditor("reception.vhd", 291, 189); // ce (w, ck)
+// Elapsed time: 84 seconds
+selectCodeEditor("reception.vhd", 249, 234); // ce (w, ck)
+// Elapsed time: 10 seconds
+selectCodeEditor("reception.vhd", 336, 328); // ce (w, ck)
+selectCodeEditor("reception.vhd", 332, 337); // ce (w, ck)
+// Elapsed time: 42 seconds
+selectCodeEditor("reception.vhd", 233, 167); // ce (w, ck)
+typeControlKey(null, null, 'z');
+// Elapsed time: 55 seconds
+typeControlKey((HResource) null, "reception.vhd", 'v'); // ce (w, ck)
+// Elapsed time: 35 seconds
+selectCodeEditor("reception.vhd", 254, 357); // ce (w, ck)
+selectCodeEditor("reception.vhd", 59, 351); // ce (w, ck)
+selectCodeEditor("reception.vhd", 171, 228); // ce (w, ck)
+// Elapsed time: 20 seconds
+selectCodeEditor("reception.vhd", 81, 295); // ce (w, ck)
+selectCodeEditor("reception.vhd", 274, 363); // ce (w, ck)
+selectCodeEditor("reception.vhd", 72, 264); // ce (w, ck)
+// Elapsed time: 37 seconds
+selectCodeEditor("reception.vhd", 169, 238); // ce (w, ck)
+selectCodeEditor("reception.vhd", 395, 341); // ce (w, ck)
+selectCodeEditor("reception.vhd", 257, 238); // ce (w, ck)
+// Elapsed time: 169 seconds
+selectCodeEditor("reception.vhd", 258, 294); // ce (w, ck)
+// Elapsed time: 199 seconds
+selectCodeEditor("reception.vhd", 260, 408); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 294 seconds
+selectCodeEditor("reception.vhd", 305, 142); // ce (w, ck)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED

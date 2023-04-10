@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu Mar 16 09:50:12 2023
+# Process ID: 3623
+# Current directory: /home/deladrie/Bureau/BE_MAC
+# Command line: vivado
+# Log file: /home/deladrie/Bureau/BE_MAC/vivado.log
+# Journal file: /home/deladrie/Bureau/BE_MAC/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/deladrie/Bureau/BE_MAC/BE_MAC.xpr
+update_compile_order -fileset sources_1
+file mkdir /home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sim_1/new/test_reception.vhd w ]
+add_files -fileset sim_1 /home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sim_1/new/test_reception.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+source test_reception.tcl
+close_sim
+launch_simulation
+source test_reception.tcl
+close_sim
