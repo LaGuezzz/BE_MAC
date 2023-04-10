@@ -29,15 +29,17 @@ entity EthernetController is
 end EthernetController;
 
 architecture Behavioral of EthernetController is
-
+    
+-- enum types for "state machine" architecture
 type receive_state_type is (IDLE,CHECK_MAC, RECEIVE_DATA);
   type transmit_state_type is (IDLE, TRANSMIT_SFD_BEGIN, TRANSMIT_EFD, TRANSMIT_ABORT , TRANSMIT_MAC_ADDR_DEST, TRANSMIT_MAC_ADDR_SRC, TRANSMIT_PAYLOAD);
   signal rstate : receive_state_type := IDLE;
   signal tstate : transmit_state_type := IDLE;
 
-
+--MAC addr of the device
   constant NOADDRI: std_logic_vector(47 downto 0):= x"6c2b59e7c20d";
-    
+
+-- internal signals for collision detection
   signal internal_RCVNGP : std_logic := '0';
   signal internal_TRNSMTP : std_logic := '0';
   signal internal_collision : std_logic := '0';
