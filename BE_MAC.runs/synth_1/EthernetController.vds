@@ -1,0 +1,294 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Apr 10 16:41:31 2023
+# Process ID: 413647
+# Current directory: /home/deladrie/Bureau/BE_MAC/BE_MAC.runs/synth_1
+# Command line: vivado -log EthernetController.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source EthernetController.tcl
+# Log file: /home/deladrie/Bureau/BE_MAC/BE_MAC.runs/synth_1/EthernetController.vds
+# Journal file: /home/deladrie/Bureau/BE_MAC/BE_MAC.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source EthernetController.tcl -notrace
+Command: synth_design -top EthernetController -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 413729 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1255.273 ; gain = 83.809 ; free physical = 108810 ; free virtual = 135541
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'EthernetController' [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:31]
+WARNING: [Synth 8-614] signal 'internal_collision' is read in the process but is not in the sensitivity list [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:152]
+INFO: [Synth 8-256] done synthesizing module 'EthernetController' (1#1) [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:31]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1299.898 ; gain = 128.434 ; free physical = 108817 ; free virtual = 135548
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1299.898 ; gain = 128.434 ; free physical = 108819 ; free virtual = 135550
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1307.902 ; gain = 136.438 ; free physical = 108819 ; free virtual = 135550
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'internal_RCVNGP_reg' into 'RCVNGP_reg' [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:55]
+INFO: [Synth 8-4471] merging register 'RSTARTP_reg' into 'RCVNGP_reg' [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:59]
+INFO: [Synth 8-4471] merging register 'RCLEAND_reg' into 'RSMATIP_reg' [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:57]
+INFO: [Synth 8-4471] merging register 'internal_TRNSMTP_reg' into 'TRNSMTP_reg' [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:164]
+WARNING: [Synth 8-6014] Unused sequential element internal_RCVNGP_reg was removed.  [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:55]
+WARNING: [Synth 8-6014] Unused sequential element RSTARTP_reg was removed.  [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:59]
+WARNING: [Synth 8-6014] Unused sequential element RCLEAND_reg was removed.  [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:57]
+WARNING: [Synth 8-6014] Unused sequential element internal_TRNSMTP_reg was removed.  [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:164]
+INFO: [Synth 8-5544] ROM "byte_count" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tstate" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "TDATAO" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'EthernetController'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                                0 |                               00
+               check_mac |                                1 |                               01
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'sequential' in module 'EthernetController'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1323.918 ; gain = 152.453 ; free physical = 108809 ; free virtual = 135540
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 13    
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 29    
+	   8 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module EthernetController 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 4     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 5     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 13    
+	   8 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 29    
+	   8 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "TDATAO" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RDONEP_reg)
+INFO: [Synth 8-3886] merging instance 'RDATAO_reg[0]' (FDCE) to 'RDATAO_reg[7]'
+INFO: [Synth 8-3886] merging instance 'RDATAO_reg[1]' (FDCE) to 'RDATAO_reg[7]'
+INFO: [Synth 8-3886] merging instance 'RDATAO_reg[2]' (FDCE) to 'RDATAO_reg[7]'
+INFO: [Synth 8-3886] merging instance 'RDATAO_reg[3]' (FDCE) to 'RDATAO_reg[7]'
+INFO: [Synth 8-3886] merging instance 'RDATAO_reg[4]' (FDCE) to 'RDATAO_reg[7]'
+INFO: [Synth 8-3886] merging instance 'RDATAO_reg[5]' (FDCE) to 'RDATAO_reg[7]'
+INFO: [Synth 8-3886] merging instance 'RDATAO_reg[6]' (FDCE) to 'RDATAO_reg[7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\RDATAO_reg[7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RSMATIP_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (RBYTEP_reg)
+WARNING: [Synth 8-3332] Sequential element (RBYTEP_reg) is unused and will be removed from module EthernetController.
+WARNING: [Synth 8-3332] Sequential element (RSMATIP_reg) is unused and will be removed from module EthernetController.
+WARNING: [Synth 8-3332] Sequential element (RDATAO_reg[7]) is unused and will be removed from module EthernetController.
+WARNING: [Synth 8-3332] Sequential element (RDONEP_reg) is unused and will be removed from module EthernetController.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1435.027 ; gain = 263.562 ; free physical = 108619 ; free virtual = 135351
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:20 . Memory (MB): peak = 1435.027 ; gain = 263.562 ; free physical = 108619 ; free virtual = 135351
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.035 ; gain = 264.570 ; free physical = 108619 ; free virtual = 135351
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.035 ; gain = 264.570 ; free physical = 108650 ; free virtual = 135383
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-3352] multi-driven net TSOCOLP_OBUF with 1st driver pin 'internal_collision_reg/Q' [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:313]
+CRITICAL WARNING: [Synth 8-3352] multi-driven net TSOCOLP_OBUF with 2nd driver pin 'TSOCOLP_reg/Q' [/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd:166]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        1|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.035 ; gain = 264.570 ; free physical = 108650 ; free virtual = 135383
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.035 ; gain = 264.570 ; free physical = 108650 ; free virtual = 135383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.035 ; gain = 264.570 ; free physical = 108650 ; free virtual = 135383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.035 ; gain = 264.570 ; free physical = 108650 ; free virtual = 135383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.035 ; gain = 264.570 ; free physical = 108650 ; free virtual = 135383
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     1|
+|2     |LUT1  |     1|
+|3     |LUT2  |     9|
+|4     |LUT3  |    11|
+|5     |LUT4  |     4|
+|6     |LUT5  |    14|
+|7     |LUT6  |    40|
+|8     |MUXF7 |     3|
+|9     |FDCE  |    24|
+|10    |FDPE  |     2|
+|11    |FDRE  |     5|
+|12    |IBUF  |    22|
+|13    |OBUF  |    27|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   163|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.035 ; gain = 264.570 ; free physical = 108650 ; free virtual = 135383
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 2 critical warnings and 9 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.035 ; gain = 264.570 ; free physical = 108653 ; free virtual = 135385
+Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:21 . Memory (MB): peak = 1436.043 ; gain = 264.570 ; free physical = 108662 ; free virtual = 135394
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 9 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:23 . Memory (MB): peak = 1566.062 ; gain = 406.242 ; free physical = 108631 ; free virtual = 135364
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint '/home/deladrie/Bureau/BE_MAC/BE_MAC.runs/synth_1/EthernetController.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file EthernetController_utilization_synth.rpt -pb EthernetController_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.15 . Memory (MB): peak = 1590.074 ; gain = 0.000 ; free physical = 108638 ; free virtual = 135369
+INFO: [Common 17-206] Exiting Vivado at Mon Apr 10 16:42:03 2023...

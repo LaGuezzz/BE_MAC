@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:02:38 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Apr 10 16:41:31 2023
+# Process ID: 413647
+# Current directory: /home/deladrie/Bureau/BE_MAC/BE_MAC.runs/synth_1
+# Command line: vivado -log EthernetController.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source EthernetController.tcl
+# Log file: /home/deladrie/Bureau/BE_MAC/BE_MAC.runs/synth_1/EthernetController.vds
+# Journal file: /home/deladrie/Bureau/BE_MAC/BE_MAC.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source EthernetController.tcl -notrace

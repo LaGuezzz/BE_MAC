@@ -1,0 +1,1 @@
+-wto "0215edd123ee4deaaee13416684d0541" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "secureip" --snapshot "EthernetController_behav" "xil_defaultlib.EthernetController" -log "elaborate.log" 

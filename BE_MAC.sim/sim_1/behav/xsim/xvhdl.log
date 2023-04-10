@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sources_1/new/reception.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity EthernetController
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/deladrie/Bureau/BE_MAC/BE_MAC.srcs/sim_1/new/test_reception.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity test_reception
